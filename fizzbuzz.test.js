@@ -3,6 +3,13 @@ import { describe, test, expect } from '@jest/globals'
 import fizzbuzz from './fizzbuzz.js'
 
 describe('fizzbuzz', () => {
+  test('accept a positive integer as it’s sole parameter', () => {
+    expect(fizzbuzz(-1)).toBe('error')
+    expect(fizzbuzz(-7)).toBe('error')
+    expect(fizzbuzz(1.5)).toBe('error')
+    expect(fizzbuzz('7')).toBe('error')
+  })
+
   test('return "fizz" if the parameter is divisible by 3', () => {
     expect(fizzbuzz(3)).toBe('fizz')
     expect(fizzbuzz(6)).toBe('fizz')
