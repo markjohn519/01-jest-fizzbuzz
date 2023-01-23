@@ -1,0 +1,31 @@
+{
+  "name": "express-sample-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siteminder-grad-program/express-sample-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siteminder-grad-program/express-sample-code/issues"
+  },
+  "homepage": "https://github.com/siteminder-grad-program/express-sample-code#readme",
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "jest": "^29.3.1"
+  },
+  "dependencies": {
+    "@jest/globals": "^29.3.1"
+  }
+}
