@@ -4,10 +4,10 @@ import fizzbuzz from './fizzbuzz.js'
 
 describe('fizzbuzz', () => {
   test('accept a positive integer as it’s sole parameter', () => {
-    expect(fizzbuzz(-1)).toThrow('error')
-    expect(fizzbuzz(-7)).toThrow('error')
-    expect(fizzbuzz(1.5)).toThrow('error')
-    expect(fizzbuzz('7')).toThrow('error')
+    expect(() => fizzbuzz(-1)).toThrow('error')
+    expect(() => fizzbuzz(-7)).toThrow('error')
+    expect(() => fizzbuzz(1.5)).toThrow('error')
+    expect(() => fizzbuzz('7')).toThrow('error')
   })
 
   test('return "fizz" if the parameter is divisible by 3', () => {
